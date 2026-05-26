@@ -559,7 +559,7 @@
   // Use demo placeholder numbers (no actual spam) but fully functional.
   // For a real portfolio, replace with actual phone number/username
   const WA_NUMBER = "2349078135244";    // replace with real number including country code (without '+')
-  const TG_USERNAME = "Omo_ola13";  // replace with your telegram username
+  const TG_USERNAME = "@Omo_ola13";  // replace with your telegram username
   
   // Set dynamic links based on current environment (client click)
   const whatsappLinkElem = document.getElementById('whatsappLink');
@@ -567,10 +567,10 @@
   
   function updateContactLinks() {
     if(whatsappLinkElem) {
-      whatsappLinkElem.href = `https://wa.me/2349078135244${WA_NUMBER}?text=Hello%20Nova%2C%20I'm%20interested%20in%20your%20robotic%20portfolio%20services!`;
+      whatsappLinkElem.href = `https://wa.me/${WA_NUMBER}?text=Hello%20Nova%2C%20I'm%20interested%20in%20your%20robotic%20portfolio%20services!`;
     }
     if(telegramLinkElem) {
-      telegramLinkElem.href = `https://t.me/@Omo_ola13${TG_USERNAME}`;
+      telegramLinkElem.href = `https://t.me/${TG_USERNAME}`;
     }
   }
   
